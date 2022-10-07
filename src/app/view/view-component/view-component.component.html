@@ -1,0 +1,9 @@
+Enter GitHub Username: <input type="text" [(ngModel)]="username">
+<button (click)="search()">Search</button>
+<div *ngIf="response">
+<p>Name: {{response.name}}</p>
+<p>Username: {{response.login}}</p>
+<p>Repositories: {{response.public_repos}}</p>
+<p>Followers: {{response.followers}}</p>
+<p>Following: {{response.following}}</p>
+</div>
